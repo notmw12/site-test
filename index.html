@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevJood Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+</head>
+<body>
+        <!-- go up button code -->
+    <a href="#" class="scrolltop show-scroll" id="scroll-top">
+        <i class='bx bx-chevron-up scrolltop__icon' ></i>
+    </a>
+
+        <!-- NavBar Section -->
+    <header class="header-1" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav nav__logo">DevJood</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact me</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu' ></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-1">
+        <!--  Home Section -->
+
+        <section class="home" id="home">
+            <div class="home__container bd-container bd-grid">
+                <div class="home__data">
+                    <span class="home__greeting">Hello, My name is</span>
+                    <h1 class="home__name">Jood Almutairi</h1>
+                    <span class="home__profession">Front-end Developer</span>
+                    <a download="future_Jood_CV.pdf" href="../v2 portifolio/pdf/future Jood CV.pdf" class="button button-light">Download Cv</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="#" class="home__social-icon"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" class="home__social-icon"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" class="home__social-icon"><i class='bx bxl-linkedin-square'></i></a>
+                </div>
+
+                <!-- <div class="home__img">
+                    <img src="../images/black.png" alt="">
+                </div> -->
+            </div>
+        </section>
+
+        <!--  About me Section -->
+
+        <section class="about section bd-container" id="about">
+            <span class="section-subtitle">My history</span>
+            <h2 class="section-title">About me</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__data bd-grid">
+                    <p class="about__description"><span>Hello, I am <br></span>Jood Almutairi an aspiring undergrad passionate with creating and developing experiances and journeys in web development</p>
+
+                    <div>
+                        <span class="about__number">1+</span>
+                        <span class="about__achiement">Years off Experiance</span>
+                    </div>
+
+                    <div>
+                        <span class="about__number">3+</span>
+                        <span class="about__achiement">Years till graduation</span>
+                    </div>
+                    
+                    <div>
+                        <span class="about__number">6+</span>
+                        <span class="about__achiement">Projects completed</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!--  Portfolio Section  -->
+        <section class="portfolio section bd-container" id="portfolio">
+            <span class="section-subtitle">My recent works</span>
+            <h2 class="section-title">Portfolio</h2>
+            
+            <div class="portfolio__nav">
+                <span class="portfolio__item active-portfolio" data-filter="all">All</span>
+                <span class="portfolio__item" data-filter=".workshops">Workshops</span>
+                <span class="portfolio__item" data-filter=".web">Web</span>
+                <span class="portfolio__item" data-filter=".ui">UI Design</span>
+                <span class="portfolio__item" data-filter=".game">Games</span>
+            </div>
+            
+            <div class="portfolio__container bd-grid">
+                
+                <div class="portfolio__content mix workshops">
+                    <a href="#"><img src="../images/QuotyLandscapeCover.png" alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__substitle">Web development</span>
+                        <a href="#"><h2 class="portfolio__title">Quoty App</h2></a>
+                        <a href="" class="button button-link">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio__content mix web">
+                    <a href="#"><img src="../images/Tech-shop-homepage.png" alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__substitle">Web development</span>
+                        <a href="#"><h2 class="portfolio__title">Tech Store Homepage</h2></a>
+                        <a href="" class="button button-link">View Details</a>
+                    </div>
+                </div>
+
+                <div class="portfolio__content mix game">
+                    <a href="#"><img src="../images/Flarby Blurp.png" alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__substitle">2d Game Development</span>
+                        <a href="#"><h2 class="portfolio__title">Flarby blurb</h2></a>
+                        <a href="" class="button button-link">View Details</a>
+                    </div>
+                </div>
+
+                <div class="portfolio__content mix ui">
+                    <a href="#"><img src="../images/NabighUi.png" alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__substitle">UI Design</span>
+                        <a href="#"><h2 class="portfolio__title">Nabigh UI</h2></a>
+                        <a href="" class="button button-link">View Details</a>
+                    </div>
+                </div>
+
+                <div class="portfolio__content mix web">
+                    <a href="#"><img src="../images/Login page.png" alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__substitle">Web development</span>
+                        <a href="#"><h2 class="portfolio__title">Login Page</h2></a>
+                        <a href="" class="button button-link">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio__content mix web">
+                    <a href="#"><img src="../images/contact.png" alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__substitle">Web development</span>
+                        <a href="#"><h2 class="portfolio__title">Contact Form</h2></a>
+                        <a href="" class="button button-link">View Details</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--  Contact me Section  -->
+        <section class="contact section bd-container" id="contact">
+            <span class="section-subtitle">For projects</span>
+            <h2 class="section-title">Contact Me</h2>
+
+            <div class="contact__container bd-grid">
+                <div class="contact__content bd-grid">
+
+                    <div class="contact__box">
+                        <i class='bx bx-envelope contact__icon'></i>
+                        <h3 class="contact__title">Gmail</h3>
+                        <span class="contact__discription">2devjood@gmail.com</span>
+                    </div>
+
+                    <div class="contact__box">
+                        <i class='bx bx-chat contact__icon'></i>
+                        <h3 class="contact__title">Chat</h3>
+                        <div>
+                            <a href="#" class="contact__social"><i class='bx bxl-instagram'></i></a>
+                            <a href="#" class="contact__social"><i class='bx bxl-telegram'></i></a>
+                            <a href="#" class="contact__social"><i class='bx bxl-twitter'></i></a>
+                        </div>
+                    </div>
+
+                    <form action="" class="contact__form">
+                        <div class="contact__inputs">
+                            <input type="text" id="name" placeholder="Name" class="contact__input">
+                            <input type="email" id="email" placeholder="Email" class="contact__input">
+                        </div>
+
+                        <div class="contact__inputs">
+                            <input type="text" id="subject" placeholder="Project" class="contact__input">
+                            <input type="number" id="number" placeholder="Number" class="contact__input">
+                        </div>
+
+                        <textarea id="content" cols="0" rows="7" placeholder="Message" class="contact__input"></textarea>
+
+                        <button id="sendButton" class="button contact__button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!--  Footer Section  -->
+    <footer class="footer">
+        <div class="footer__container bd-container">
+            <h1 class="footer__title">DevJood</h1>
+            <p class="footer__description">I am Jood Almutairi and this is my personal website, any guidance is appreciated here</p>
+            
+            <div class="footer__social">
+                <a href="#" class="footer__link"><i class='bx bxl-linkedin'></i></a>
+                <a href="#" class="footer__link"><i class='bx bxl-github'></i></a>
+            </div>
+            <p class="footer__copy">&#169; Made with &#9825; by DevJood. Dec 2023 </p>
+        </div>
+    </footer>
+    
+    <script src="..\Js\mixitup.min.js"></script>
+    <script src="../Js/main.js"></script>
+
+</body>
+</html>
+
+
+<!--  Posts  -->
+
+<!-- <section class="posts section bd-container" id="posts">
+<span class="section-subtitle">Recent Acomplishments and feed</span>
+    <h2 class="section-title">Recent Posts</h2>
+
+    <div class="posts__container bd-grid">
+        <div class="posts__content">
+            <h2 class="posts__title">
+                <i class='bx bx-briefcase-alt posts__title-icon'></i>
+                Work Experiance
+            </h2>
+            
+            <div class="bd-grid">
+
+                <div class="posts__data">
+                    <h3 class="posts__area">Junior Front End Web Developer</h3>
+                    
+                    <div class="posts__box">
+                        <span class="posts__work">
+                            <i class='bx bx-briefcase-alt posts__icon'></i>
+                            Freelance
+                        </span>
+
+                        <span class="posts__work">
+                            <i class='bx bx-calendar-alt posts__icon'></i>
+                            Dec 2023 - present
+                        </span>
+                    </div>
+                </div>
+
+
+                <div class="posts__data">
+                    <h3 class="posts__area">Indie Game Developer </h3>
+                    
+                    <div class="posts__box">
+                        <span class="posts__work">
+                            <i class='bx bx-briefcase-alt posts__icon'></i>
+                            Unity
+                        </span>
+
+                        <span class="posts__work">
+                            <i class='bx bx-calendar-alt posts__icon'></i>
+                            Sep 2019 - Jan 2021
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="posts__content">
+            <h2 class="posts__title">
+                <i class='bx bx-briefcase-alt posts__title-icon'></i>
+                Work Experiance
+            </h2>
+            
+            <div class="bd-grid">
+
+                <div class="posts__data">
+                    <h3 class="posts__area">Junior Front End Web Developer</h3>
+                    
+                    <div class="posts__box">
+                        <span class="posts__work">
+                            <i class='bx bx-briefcase-alt posts__icon'></i>
+                            Freelance
+                        </span>
+
+                        <span class="posts__work">
+                            <i class='bx bx-calendar-alt posts__icon'></i>
+                            Dec 2023 - present
+                        </span>
+                    </div>
+                </div>
+
+
+                <div class="posts__data">
+                    <h3 class="posts__area">Indie Game Developer </h3>
+                    
+                    <div class="posts__box">
+                        <span class="posts__work">
+                            <i class='bx bx-briefcase-alt posts__icon'></i>
+                            Unity
+                        </span>
+
+                        <span class="posts__work">
+                            <i class='bx bx-calendar-alt posts__icon'></i>
+                            Sep 2019 - Jan 2021
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
